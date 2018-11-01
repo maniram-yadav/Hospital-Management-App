@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory> 
+
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="show_sql">true</property>
+      
+   
+    <mapping class="org.hospital.beans.PersonInfo"/>
+  <mapping class="org.hospital.beans.Rooms"/>
+    <mapping class="org.hospital.beans.Employees"/>
+    <mapping class="org.hospital.beans.Blood_Available"/>
+    <mapping class="org.hospital.beans.BDonations_History"/>
+     <mapping class="org.hospital.beans.Department"/> 
+    <mapping class="org.hospital.beans.Doctors"/>
+    <mapping class="org.hospital.beans.Employee_Logins"/>
+    <mapping class="org.hospital.beans.Medicine_Available"/>
+  <mapping class="org.hospital.beans.Medicine_Receptions"/>
+  <mapping class="org.hospital.beans.Medicine_Sold"/>
+  <mapping class="org.hospital.beans.Notices"/>
+  <mapping class="org.hospital.beans.NurseAllotments"/>
+  <mapping class="org.hospital.beans.Patient_History"/>
+  <mapping class="org.hospital.beans.Patient_Room"/>
+  <mapping class="org.hospital.beans.Patient_Treatment"/>
+  <mapping class="org.hospital.beans.Sold_Medicine"/>
+  
+  </session-factory>
+  </hibernate-configuration>
